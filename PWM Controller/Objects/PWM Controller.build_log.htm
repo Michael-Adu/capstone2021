@@ -1,0 +1,95 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.31.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Michael Adu, Ashesi, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.31.0.0
+Toolchain Path:  D:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.31.0.0
+Dialog DLL:      DARMCM1.DLL V1.19.3.0
+Target DLL:      CMSIS_AGDI.dll V1.32.6.0
+Dialog DLL:      TARMCM1.DLL V1.14.2.0
+ 
+<h2>Project:</h2>
+D:\Onedrive\OneDrive - Ashesi University\4th Year\Capstone\Codes\PWM Controller\PWM Controller.uvprojx
+Project File Date:  02/21/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'Target 1'
+compiling main.c...
+pindef.h(74): warning:  #1-D: last line of file ends without a newline
+  #define PTE31 31,'E'
+pinset.h(9): warning:  #1-D: last line of file ends without a newline
+  #endif
+pwm.h(4): warning:  #1-D: last line of file ends without a newline
+  #endif
+queue.h(27): warning:  #1-D: last line of file ends without a newline
+  	
+uart.h(11): warning:  #1-D: last line of file ends without a newline
+  	
+timers.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+lcddisp.h(15): warning:  #1-D: last line of file ends without a newline
+  #endif
+main.h(32): warning:  #1295-D: Deprecated declaration initialize - give arg types
+  void initialize();
+main.h(33): warning:  #1295-D: Deprecated declaration motor_ctrl - give arg types
+  void motor_ctrl();
+main.h(37): warning:  #1-D: last line of file ends without a newline
+  void Hallsense (void);
+main.c(10): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+  		sprintf(buff,"Set Speed : %d\n",speed);
+main.c(11): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+  		sprintf(value,"RPM Value = %d",rpm_val);
+main.c(7): warning:  #177-D: variable "start"  was declared but never referenced
+  	int start = micro;
+main.c(40): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *"
+  	lcd_display(value,1);
+main.c: 14 warnings, 0 errors
+linking...
+Program Size: Code=5064 RO-data=224 RW-data=112 ZI-data=888  
+".\Objects\PWM Controller.axf" - 0 Error(s), 14 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.Kinetis_KLxx_DFP.1.15.0.pack
+                Keil.Kinetis_KLxx_DFP.1.15.0
+                NXP Kinetis KLxx Series Device Support and Examples
+   * Component: Startup Version: 2.5.0
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\Device\MKL25Z128xxx4
+  .\RTE\_Target_1
+  C:\Users\MNGA\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  C:\Users\MNGA\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+
+   * Component: Keil::Device:Startup:2.5.0
+      Source file:   Device\Source\system_MKL25Z4.c
+      Source file:   Device\Source\ARM\startup_MKL25Z4.s
+      Include file:  Device\Source\system_MKL25Z4.h
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
